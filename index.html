@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6a623">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+
+<title>Leetchi Fouley 🎁</title>
+
+</head>
+<body>
+<header class="top"><div class="nav"><div class="brand">Leetchi<span>.com</span></div><div class="secure">12 décembre 2026 - Une initiative préparée avec le cœur 🎁</div></div></header>
+<main>
+<p class="crumb">Accueil　›　Cagnottes　›　Anniversaire</p>
+<div class="layout">
+<section class="panel">
+<div class="hero"><div class="heroText"><div class="eyebrow">Birthday Operation</div><h1>La cagnotte de Fouley 🎂</h1><p>Parce qu'un sourire venu d'Holywwod mérite une collecte à sa hauteur.</p></div></div>
+<div class="content">
+<div class="organizer"><div class="avatar">VCSI</div><div><strong>Organisée par des collègues en OR</strong><br><span>Pour célébrer Fouleymata comme il se doit</span></div></div>
+<h2>L'âge avance, le sourire éblouit ! 😁</h2>
+<div class="desc">Cette année, on a décidé de marquer le coup pour Fouley ! L'idée ? Réunir les personnes qui comptent autour d'une belle initiative, avec une petite participation symbolique<br><br>Chaque contribution compte. Même les plus petites. Surtout celles qui viennent du cœur… ou d'un compte bancaire bien approvisionné. 😉</div>
+<div class="divider"></div>
+<div class="contribTitle"><h3>Ils ont déjà participé</h3><span class="count">12 contributeurs</span></div>
+<div id="people">
+<div class="person"><div class="pic">😎</div><div class="pinfo"><div class="pname">La PMO des anniversaires (😇&Lina)</div><div class="comment">Pour financer notre prochain Escape Game. Joyeux anniversaire Fouley...</div></div><div class="amount">15 €</div></div>
+<div class="person"><div class="pic">🕺</div><div class="pinfo"><div class="pname">La Miss Tunisienne (Wafâa)</div><div class="comment">Joyeux anniversaire Fouleymata (Harissa🌶️ de Tunisie 😁)</div></div><div class="amount">25 Pots d'Harissa</div></div>
+<div class="person"><div class="pic">🕶️</div><div class="pinfo"><div class="pname">Un admirateur anonyme</div><div class="comment">Je donne, mais je ne veux pas être identifié ni associé à cette initiative 🥷.</div></div><div class="amount">45 €</div></div>
+<div class="person"><div class="pic">🧁</div><div class="pinfo"><div class="pname">Le Groom (Le Bel Groom 😊)</div><div class="comment">Pour que ton sourire continue d’illuminer nos journées, même dans les heures les plus sombres de Connect</div></div><div class="amount">40 dentifrice</div></div>
+<div class="person"><div class="pic">🧙</div><div class="pinfo"><div class="pname">L'opportuniste</div><div class="comment">Je participe uniquement pour ne plus être relancé sur mes tickets Azure en retard 😊</div></div><div class="amount">25 €</div></div>
+<div class="person"><div class="pic">€</div><div class="pinfo"><div class="pname">Afficher la suite ...</div><div class="comment">...</div></div><div class="amount">-- €</div></div>
+</div>
+<div class="divider"></div>
+</div>
+</section>
+<aside class="panel side">
+<div class="status">Montant total collecté</div><div class="amountBig">1 000 €</div><div class="goal">sur un objectif de 1 000 €</div>
+<div class="bar"><span></span></div><div class="stats"><span><strong>100 %</strong> de l'objectif atteint</span><span>🎉 Objectif atteint</span></div>
+<button class="cta" id="viewBtn">🎁 Dépenser ma cagnotte</button>
+<div class="hint">Une petite surprise t'attend…<br>Promis, tu peux cliquer sans sortir ta carte bleue.</div>
+<div class="trust"><span>🔒</span><span><b>Cagnotte Leetchi</b><br>Créée spécialement pour l'anniversaire de Fouleymata</span></div>
+</aside>
+</div>
+</main>
+<div class="reveal" id="reveal" role="dialog" aria-modal="true" aria-label="Surprise anniversaire">
+ <div class="revealCard">
+  <div id="loadingPart"><div class="bigemoji">🎁</div><div class="loading">Ouverture de ta cagnotte en cours…</div><div class="spinner"></div><p>Vérification des contributions, comptage des bougies et contrôle du niveau de blancheur des dents…</p></div>
+  <div class="finalMsg" id="finalMsg">
+   <div class="tag">RÉSULTAT OFFICIEL DE LA COLLECTE</div>
+   <div class="bigemoji">🥁</div>
+   <h2>FOULEY<br><em>🎂</em></h2>
+   <p>Tu as vraiment cru qu'on avait récolté 1 000 € pour toi ? avec les pinces : Angélina & Wafâa ? <br>Bon… on n’a peut-être pas rempli ta cagnotte, mais on a réuni bien mieux : une bonne dose d’énergie positive, une montagne de bonne humeur et surtout, tous nos meilleurs vœux pour toi ! ❤️</p>
+   <p style="font-size:22px;font-weight:800;color:#ffc65b">JOYEUX ANNIVERSAIRE ! 🎂🎉</p>
+   <p>On te souhaite une année pleine de bonheur, de santé, de réussite, de fous rires et de moments inoubliables.<br><strong>Ne change rien… bon, à la limite, baisse juste un peu la luminosité de tes dents ! 😁</strong></p>
+   <p>Amicalement,<br><strong>ton équipe "Sage" préférée ❤️</strong></p>
+   <button class="close" onclick="document.getElementById('reveal').classList.remove('show')">Quitter cette sympathique escroquerie 😂</button>
+   <p class="smallprint">P.S. : Pour le virement des 1 000 €, adresse-toi directement à Sofinco, ils proposent en ce moment un crédit renouvelable à seulement 6% 😁😁😁</p>
+  </div>
+ </div>
+</div>
+<script>
+const btn=document.getElementById('viewBtn'), reveal=document.getElementById('reveal');
+btn.addEventListener('click',()=>{
+ reveal.classList.add('show');
+ document.getElementById('loadingPart').style.display='block';
+ document.getElementById('finalMsg').classList.remove('visible');
+ setTimeout(()=>{
+  document.getElementById('loadingPart').style.display='none';
+  document.getElementById('finalMsg').classList.add('visible');
+  confetti();
+ },5000);
+});
+function confetti(){
+ const colors=['#ffc65b','#00c783','#ff6b6b','#8ec5ff','#fff'];
+ for(let i=0;i<85;i++){
+  const el=document.createElement('i');el.className='confetti';
+  el.style.left=Math.random()*100+'vw';el.style.background=colors[i%colors.length];
+  el.style.animationDuration=(2.4+Math.random()*2.4)+'s';
+  el.style.animationDelay=(Math.random()*.6)+'s';
+  el.style.transform='rotate('+Math.random()*360+'deg)';
+  document.body.appendChild(el);setTimeout(()=>el.remove(),5500);
+ }
+}
+reveal.addEventListener('click',e=>{if(e.target===reveal)reveal.classList.remove('show')});
+</script>
+</body></html>
